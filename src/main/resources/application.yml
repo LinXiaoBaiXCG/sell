@@ -9,8 +9,29 @@ spring:
   # 返回前端不显示null的内容
   jackson:
     default-property-inclusion: non_null
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
 #  redis:
 #    host: 127.0.0.1
 #    port: 6379
 server:
   context-path: /sell
+  port: 8080
+wechat:
+  mpAppId: wx2e75ec758d5ca8ab
+  mpAppSecret: a35b37288b40d47845b4c866188b8ab7
+  openAppId: wx6ad144e54af67d87
+  openAppSecret: 91a2ff6d38a2bbccfb7e9xxxxxx
+  mchId: 1483469312
+  mchKey: 06C56A89949D617xxxxxxxxxxx
+  keyPath: /var/weixin_cert/h5.p12
+  notifyUrl: http://lcqweixin.3w.dkys.org/sell/pay/notify
+  templateId:
+    orderStatus: e-Cqq67QxD6YNI41iRiqawEYdFavW_7pc7LyEMb-yeQ
+
+projectUrl:
+  wechatMpAuthorize: http://lcqweixin.3w.dkys.org
+  wechatOpenAuthorize: http://lcqweixin.3w.dkys.org
+  sell: http://lcqweixin.3w.dkys.org
